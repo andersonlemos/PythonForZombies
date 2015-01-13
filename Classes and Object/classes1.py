@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import os,sys,datetime
+import datetime
 class Pessoa():
     def __init__(self, nome, nascimento):
         self.nome = nome
