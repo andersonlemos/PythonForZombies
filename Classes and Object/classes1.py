@@ -13,7 +13,7 @@ class Pessoa():
     def __str__(self):
         return '%s , %d anos' %(self.nome,self.idade())
 
-masanori = Pessoa('Fernando massanori',datetime.date(1980,9,1))
+masanori = Pessoa('Dunha Silva',datetime.date(1980,9,1))
 
 print masanori.idade()
 print masanori
