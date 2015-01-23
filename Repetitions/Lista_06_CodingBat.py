@@ -10,8 +10,8 @@
 def dormir(dia_semana, feriado):
   if dia_semana is False or feriado is True:
     return True
-
-  return False
+  else:
+    return False
 
 
 # B. alunos_problema
@@ -46,10 +46,8 @@ def soma_dobro(a, b):
 # dica: abs(x) retorna o valor absoluto de x
 def diff21(n):
   diferenca = abs(21 - n)
-
   if n > 21:
     diferenca *= 2
-
   return diferenca
 
 
@@ -59,14 +57,20 @@ def diff21(n):
 # temos problemas se o papagaio estiver falando
 # antes da 7 ou depois das 20
 def papagaio(falando, hora):
-  return
+  if falando is True and (hora < 7 or hora > 20):
+    return True
+  else:
+    return False
 
 
 # F. dez
 # dados dois inteiros a e b
 # retorna True se um dos dois é 10 ou a soma é 10
 def dez(a, b):
-  return
+  if (a is 10 or b is 10) or (a + b) is 10:
+    return True
+  else:
+    return False
 
 
 # G. dista10
@@ -77,7 +81,9 @@ def dez(a, b):
 # dista10(90) -> True
 # dista10(89) -> False
 def dista10(n):
-  return
+  if n is 100 or n is 200:
+    return True
+
 
 
 # H. apaga
