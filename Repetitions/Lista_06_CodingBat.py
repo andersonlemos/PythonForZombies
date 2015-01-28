@@ -81,10 +81,9 @@ def dez(a, b):
 # dista10(90) -> True
 # dista10(89) -> False
 def dista10(n):
-  if n is 100 or n is 200:
+  if abs(100 - n) <= 10 or abs(200 - n) <= 10:
     return True
-
-
+  return False
 
 # H. apaga
 # seja uma string s e um inteiro n
@@ -92,7 +91,18 @@ def dista10(n):
 # apaga('kitten', 1) -> 'ktten'
 # apaga('kitten', 4) -> 'kittn'
 def apaga(s, n):
-  return
+
+   palavra = ''
+   contador = 0
+
+   while contador < s.__len__():
+
+     if not contador is n:
+       palavra = palavra + s[contador]
+
+     contador += 1
+
+   return palavra
 
 
 # I. troca
@@ -194,6 +204,7 @@ def main():
   test(apaga('kitten', 1), 'ktten')
   test(apaga('kitten', 0), 'itten')
   test(apaga('kitten', 4), 'kittn')
+  test(apaga('kitten', 3), 'kiten')
   test(apaga('Hi', 0), 'i')
   test(apaga('Hi', 1), 'H')
   test(apaga('code', 0), 'ode')
