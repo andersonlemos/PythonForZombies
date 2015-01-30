@@ -95,7 +95,7 @@ def apaga(s, n):
    palavra = ''
    contador = 0
 
-   while contador < s.__len__():
+   while not contador is s.__len__():
 
      if not contador is n:
        palavra = palavra + s[contador]
@@ -113,11 +113,21 @@ def apaga(s, n):
 # troca('a') -> 'a'
 # troca('ab') -> 'ba'
 def troca(s):
+    palavra = s[s.__len__()-1]
+    contador = 1
 
-   if s.__len__() is 1:
-     return s[0]
-   else:
-     return s
+    while contador < s.__len__():
+
+        if contador is s.__len__() -1:
+            palavra = palavra + s[0]
+        else:
+            palavra = palavra + s[contador]
+
+
+        contador +=1
+
+    return palavra
+
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
