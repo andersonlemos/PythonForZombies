@@ -114,23 +114,22 @@ def apaga(s, n):
 # troca('ab') -> 'ba'
 def troca(s):
 
-    if s.__len__() <= 1:
-        return s
-    else:
-        palavra = s[s.__len__()-1]
-        contador = 1
+  if s.__len__()<=1:
+    return s
+  else:
+      palavra = s[s.__len__()-1]
+      contador = 1
 
-        while contador < s.__len__():
+      while contador < s.__len__():
 
-            if contador is s.__len__() -1:
-                palavra = palavra + s[0]
-            else:
-                palavra = palavra + s[contador]
+          if contador is s.__len__() -1:
+              palavra = palavra + s[0]
+          else:
+              palavra = palavra + s[contador]
 
+          contador +=1
 
-            contador +=1
-
-        return palavra
+      return palavra
 
 
 # Provided simple test() function used in main() to print
