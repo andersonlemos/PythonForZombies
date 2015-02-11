@@ -8,11 +8,16 @@
 <p>
     Bem vindo {{username}}
 </p>
+<p>Qual é a sua linguagem de programação favorita?</p>
 <ul>
     %for thing in things:
         <li>{{thing}}</li>
     %end
 
 </ul>
+<form action="/favorita" method="post" >
+          <input type="textbox" name="lang" />
+          <input type="submit" name="submit" value="Submit" />
+</form>
 </body>
 </html>
